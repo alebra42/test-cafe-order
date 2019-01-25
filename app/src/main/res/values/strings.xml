@@ -5,4 +5,5 @@
     <string name="hint_name">Enter your name:</string>
     <string name="hint_password">Enter password:</string>
     <string name="text_create_order">Create order</string>
+    <string name="text_empty_fields">Fields are not entered</string>
 </resources>
