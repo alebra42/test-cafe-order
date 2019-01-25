@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Test Cafe Order</string>
+    <string name="hint_logo">Coffee logo</string>
+    <string name="text_welcome">Welcome!</string>
+    <string name="hint_name">Enter your name:</string>
+    <string name="hint_password">Enter password:</string>
+    <string name="text_create_order">Create order</string>
 </resources>
