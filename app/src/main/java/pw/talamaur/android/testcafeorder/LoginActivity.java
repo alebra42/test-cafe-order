@@ -31,8 +31,7 @@ public class LoginActivity extends AppCompatActivity {
             intent.putExtra("password", password);
             startActivity(intent);
         } else {
-            Toast.makeText(this, getText(R.string.text_empty_fields),
-                    Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.text_empty_fields, Toast.LENGTH_SHORT).show();
         }
     }
 }
