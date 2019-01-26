@@ -1,9 +1,30 @@
 <resources>
     <string name="app_name">Test Cafe Order</string>
     <string name="hint_logo">Coffee logo</string>
-    <string name="text_welcome">Welcome!</string>
+    <string name="welcome">Welcome!</string>
     <string name="hint_name">Enter your name:</string>
     <string name="hint_password">Enter password:</string>
-    <string name="text_create_order">Create order</string>
-    <string name="text_empty_fields">Fields are not entered</string>
+    <string name="create_order">Create order</string>
+    <string name="empty_fields">Fields are not entered</string>
+    <string name="hi_username">Hi, %USERNAME%! What are you plan to order?</string>
+    <string name="tea">Tea</string>
+    <string name="coffee">Coffee</string>
+    <string name="additions">What may be added to tea?</string>
+    <string name="milk">Milk</string>
+    <string name="sugar">Sugar</string>
+    <string name="lemon">Lemon</string>
+    <string name="choose_drink">Choose type of drink</string>
+    <string name="button_send_order">Button send order</string>
+
+    <string-array name="coffee_options">
+        <item>Americano</item>
+        <item>Espresso</item>
+        <item>Latte</item>
+    </string-array>
+
+    <string-array name="tea_options">
+        <item>Black</item>
+        <item>Green</item>
+        <item>Red</item>
+    </string-array>
 </resources>
