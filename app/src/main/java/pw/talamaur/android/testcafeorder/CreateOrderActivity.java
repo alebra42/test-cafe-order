@@ -17,13 +17,14 @@ public class CreateOrderActivity extends AppCompatActivity {
         setContentView(R.layout.activity_create_order);
 
         Intent intent = getIntent();
-        String name = intent.getStringExtra("name");
-        String password = intent.getStringExtra("password");
+        String name = intent.hasExtra("name") ?
+                intent.getStringExtra("name") :
+                "?";
+        String password = intent.hasExtra("password") ?
+                intent.getStringExtra("password") :
+                "?";
 
-        TextView textViewHello = findViewById(R.id.textViewHello);
-        String oldHelloText = textViewHello.getText().toString();
-        String newHelloText = oldHelloText.replace("%USERNAME%", name);
-        textViewHello.setText(newHelloText);
+        setupTextViewHello(name);
 
         RadioGroup radioGroup = findViewById(R.id.radioGroupDrinks);
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
@@ -55,5 +56,12 @@ public class CreateOrderActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    private void setupTextViewHello(String newName) {
+        TextView textViewHello = findViewById(R.id.textViewHello);
+        String oldHelloText = textViewHello.getText().toString();
+        String newHelloText = oldHelloText.replace("%USERNAME%", newName);
+        textViewHello.setText(newHelloText);
     }
 }
