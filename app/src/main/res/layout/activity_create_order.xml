@@ -57,7 +57,7 @@
         app:layout_constraintTop_toBottomOf="@id/radioGroupDrinks"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="@string/additions"
+        android:text="@string/additions_unknown"
         android:textSize="24sp"
         android:textStyle="bold" />
 

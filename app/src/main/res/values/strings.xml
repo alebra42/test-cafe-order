@@ -9,7 +9,9 @@
     <string name="hi_username">Hi, %USERNAME%! What are you plan to order?</string>
     <string name="tea">Tea</string>
     <string name="coffee">Coffee</string>
-    <string name="additions">What may be added to tea?</string>
+    <string name="additions_unknown">What may be added&#8230;?</string>
+    <string name="additions_tea">What may be added to tea?</string>
+    <string name="additions_coffee">What may be added to coffee?</string>
     <string name="milk">Milk</string>
     <string name="sugar">Sugar</string>
     <string name="lemon">Lemon</string>

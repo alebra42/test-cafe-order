@@ -31,6 +31,7 @@ public class CreateOrderActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 Spinner spinnerCoffee = findViewById(R.id.spinnerCoffee);
                 Spinner spinnerTea = findViewById(R.id.spinnerTea);
+                TextView textViewAdditions = findViewById(R.id.textViewAdditions);
                 CheckBox checkboxLemon = findViewById(R.id.checkboxLemon);
                 switch (checkedId) {
                     case 1: // tea
@@ -38,6 +39,7 @@ public class CreateOrderActivity extends AppCompatActivity {
                         spinnerCoffee.setEnabled(false);
                         spinnerTea.setVisibility(View.VISIBLE);
                         spinnerTea.setEnabled(true);
+                        textViewAdditions.setText(R.string.additions_tea);
                         checkboxLemon.setEnabled(true);
                         break;
 
@@ -46,6 +48,7 @@ public class CreateOrderActivity extends AppCompatActivity {
                         spinnerCoffee.setEnabled(true);
                         spinnerTea.setVisibility(View.INVISIBLE);
                         spinnerTea.setEnabled(false);
+                        textViewAdditions.setText(R.string.additions_coffee);
                         checkboxLemon.setChecked(false);
                         checkboxLemon.setEnabled(false);
                         break;
