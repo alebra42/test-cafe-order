@@ -9,6 +9,7 @@
     <string name="hi_username">Hi, %USERNAME%! What are you plan to order?</string>
     <string name="tea">Tea</string>
     <string name="coffee">Coffee</string>
+    <string name="not_selected">Not selected</string>
     <string name="additions_unknown">What may be added&#8230;?</string>
     <string name="additions_tea">What may be added to tea?</string>
     <string name="additions_coffee">What may be added to coffee?</string>
@@ -17,6 +18,7 @@
     <string name="lemon">Lemon</string>
     <string name="choose_drink">Choose type of drink</string>
     <string name="button_send_order">Button send order</string>
+    <string name="send_order">Send order</string>
 
     <string-array name="coffee_options">
         <item>Americano</item>
