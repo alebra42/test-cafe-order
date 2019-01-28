@@ -38,13 +38,12 @@ public class CreateOrderActivity extends AppCompatActivity {
 
         setupTextViewHello(name);
         setupCheckBoxes();
+        setupSpinners();
 
         RadioGroup radioGroup = findViewById(R.id.radioGroupDrinks);
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                spinnerCoffee = findViewById(R.id.spinnerCoffee);
-                spinnerTea = findViewById(R.id.spinnerTea);
                 TextView textViewAdditions = findViewById(R.id.textViewAdditions);
                 switch (checkedId) {
                     case 1: // tea
@@ -82,6 +81,11 @@ public class CreateOrderActivity extends AppCompatActivity {
         checkBoxMilk = findViewById(R.id.checkboxMilk);
         checkBoxSugar = findViewById(R.id.checkboxSugar);
         checkBoxLemon = findViewById(R.id.checkboxLemon);
+    }
+
+    private void setupSpinners() {
+        spinnerCoffee = findViewById(R.id.spinnerCoffee);
+        spinnerTea = findViewById(R.id.spinnerTea);
     }
 
     public void onClickSendOrder(View view) {
