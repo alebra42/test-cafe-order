@@ -110,10 +110,8 @@ public class CreateOrderActivity extends AppCompatActivity {
         resultString.append('\n');
         resultString.append("Drink option: ").append(drinkOption);
 
-        Intent intent = new Intent(Intent.ACTION_SEND);
-        intent.setType("text/plain");
-        intent.putExtra(Intent.EXTRA_TEXT, resultString.toString());
-        Intent chooserIntent = Intent.createChooser(intent, "TEST 445");
-        startActivity(chooserIntent);
+        Intent intent = new Intent(this, OrderDetailsActivity.class);
+        intent.putExtra("message", resultString.toString());
+        startActivity(intent);
     }
 }
